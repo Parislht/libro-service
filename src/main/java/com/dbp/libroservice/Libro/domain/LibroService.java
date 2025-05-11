@@ -61,6 +61,16 @@ public class LibroService {
                 .toList();
     }
 
+    public  Libro findLibroById(Long id) {
+        Libro libro = libroRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Libro no encontrado"));
+        return libro;
+    }
+
+    public void save(Libro libro) {
+        libroRepository.save(libro);
+    }
+
     private LibroResponseDTO convertirADTO(Libro libro) {
         LibroResponseDTO dto = new LibroResponseDTO();
         dto.setIdLibro(libro.getIdLibro());
