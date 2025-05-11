@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/editoriales")
+@RequestMapping("/editoriales")
 public class EditorialController {
 
     private final EditorialService editorialService;
