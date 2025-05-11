@@ -11,6 +11,8 @@ public class LibroRequestDTO {
     private boolean disponible;
     private Long idCategoria;
     private Long idEditorial;
+    private int puntuacion;
+
 
 
     public String getTitulo() {
@@ -51,6 +53,14 @@ public class LibroRequestDTO {
 
     public void setIdEditorial(Long idEditorial) {
         this.idEditorial = idEditorial;
+    }
+
+    public int getPuntuacion() {
+        return puntuacion;
+    }
+
+    public void setPuntuacion(int puntuacion) {
+        this.puntuacion = puntuacion;
     }
 
 

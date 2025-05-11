@@ -38,6 +38,7 @@ public class LibroService {
         libro.setDisponible(dto.isDisponible());
         libro.setCategoria(categoria);
         libro.setEditorial(editorial);
+        libro.setPuntuacion(dto.getPuntuacion());
 
         return convertirADTO(libroRepository.save(libro));
     }
@@ -68,6 +69,8 @@ public class LibroService {
         dto.setDisponible(libro.isDisponible());
         dto.setNombreCategoria(libro.getCategoria().getNombreCategoria());
         dto.setNombreEditorial(libro.getEditorial().getNombreEditorial());
+        dto.setPúntuacion(libro.getPuntuacion());
+
         return dto;
     }
 }

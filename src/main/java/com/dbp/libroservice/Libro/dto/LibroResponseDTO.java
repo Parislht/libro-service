@@ -12,6 +12,7 @@ public class LibroResponseDTO {
     private boolean disponible;
     private String nombreCategoria;
     private String nombreEditorial;
+    private int puntuacion;
 
     public Long getIdLibro() {
         return idLibro;
@@ -61,5 +62,12 @@ public class LibroResponseDTO {
         this.nombreEditorial = nombreEditorial;
     }
 
+    public int getPuntuacion() {
+        return puntuacion;
+    }
+
+    public void setPúntuacion(int puntuacion) {
+        this.puntuacion = puntuacion;
+    }
 
 }

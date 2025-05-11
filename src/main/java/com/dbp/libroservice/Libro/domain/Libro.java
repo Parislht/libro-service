@@ -28,6 +28,8 @@ public class Libro {
     @JoinColumn(name = "id_editorial")
     private Editorial editorial;
 
+    private int puntuacion;
+
 
     public Long getIdLibro() {
         return idLibro;
